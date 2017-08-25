@@ -27,8 +27,7 @@ catkin_make
 Type the following into a terminal:
 
 ```
-cd ~/rosflight_ws
-source devel/setup.bash
+source ~/rosflight_ws/devel/setup.bash
 roslaunch rosplane_sim fixedwing.launch
 ```
 
@@ -38,19 +37,18 @@ The airplane should takeoff and fly a pre-defined waypoint path.
 
 ### Running the ROSflight sil simulator
 
-Set up your Taranis X7 transmitter with a new model. You will probably need to setup a arm switch and reverse your elevator input. Plug the transmitter into your computer with a mini-USB cable.
+Set up your Taranis QX7 transmitter with a new model. You will probably need to setup a arm switch and reverse your elevator input. Plug the transmitter into your computer with a mini-USB cable.
 
 Type the following into a terminal:
 
 ```
-cd ~/rosflight_ws
-source devel/setup.bash
+source ~/rosflight_ws/devel/setup.bash
 roslaunch rosplane_sim rosflight_sil.launch
 ```
 
 Click the play button in the gazebo window toolbar.
 
-In another terminal type:
+Open another terminal and type:
 
 ```
 source ~/rosflight_ws/devel/setup.bash
