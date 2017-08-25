@@ -11,7 +11,7 @@ You will need to have installed Ubuntu Linux on your computer and have ROS Kinet
 
 ### Installing and Building
 
-Type the following into a terminal
+Type the following into a terminal:
 
 ```
 cd ~
@@ -24,7 +24,7 @@ catkin_make
 
 ### Running the ROSplane simulator
 
-Type the following into a terminal
+Type the following into a terminal:
 
 ```
 cd ~/rosflight_ws
@@ -34,13 +34,13 @@ roslaunch rosplane_sim fixedwing.launch
 
 Click the play button in the gazebo window toolbar.
 
-The airplane should fly a pre-defined waypoint path.
+The airplane should takeoff and fly a pre-defined waypoint path.
 
 ### Running the ROSflight sil simulator
 
 Set up your Taranis X7 transmitter with a new model. You will probably need to setup a arm switch and reverse your elevator input. Plug the transmitter into your computer with a mini-USB cable.
 
-Type the following into a terminal
+Type the following into a terminal:
 
 ```
 cd ~/rosflight_ws
@@ -53,6 +53,7 @@ Click the play button in the gazebo window toolbar.
 In another terminal type:
 
 ```
+source ~/rosflight_ws/devel/setup.bash
 rosservice call /fixedwing/param_load_from_file ~/rosflight_ws/param.txt
 rosservice call /fixedwing/calibrate_imu
 rosservice call /fixedwing/param_write
@@ -60,6 +61,6 @@ rosservice call /fixedwing/param_write
 
 Flip the arm switch on the transmitter.
 
-The airplane should fly in an orbit.
+The airplane should takeoff and fly in an orbit.
 
 
