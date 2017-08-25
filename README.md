@@ -52,7 +52,7 @@ Open another terminal and type:
 
 ```
 source ~/rosflight_ws/devel/setup.bash
-rosservice call /fixedwing/param_load_from_file ~/rosflight_ws/param.txt
+rosservice call /fixedwing/param_load_from_file ~/rosflight_ws/param.yml
 rosservice call /fixedwing/calibrate_imu
 rosservice call /fixedwing/param_write
 ```
